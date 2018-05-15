@@ -10,5 +10,5 @@ RUN apt-get --quiet update --yes && \
     unzip android-sdk.zip && rm android-sdk.zip && ls tools && \
     yes | sdkmanager --licenses && \ 
     touch ~/.android/repositories.cfg && \
-    sdkmanager "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "extras;google;google_play_services" "extras;google;m2repository" "extras;android;m2repository" "tools" "ndk-bundle" "build-tools;$ANDROID_BUILD_TOOLS" "system-images;android-${ANDROID_COMPILE_SDK};google_apis;x86"  && \
-    echo yes | sdkmanager --licenses
+    sdkmanager "emulator" "platform-tools" "platforms;android-${ANDROID_COMPILE_SDK}" "extras;google;google_play_services" "extras;google;m2repository" "extras;android;m2repository" "tools" "ndk-bundle" "build-tools;$ANDROID_BUILD_TOOLS" "system-images;android-${ANDROID_COMPILE_SDK};google_apis;x86"  && \
+    echo yes | sdkmanager --licenses 
