@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-ENV ANDROID_COMPILE_SDK="27" ANDROID_BUILD_TOOLS="27.0.3" ANDROID_SDK_TOOLS="3859397" ANDROID_HOME="/opt" PATH="/opt/node/bin:/opt/tools:/opt/tools/bin:${PATH}"
+ENV ANDROID_COMPILE_SDK="28" ANDROID_BUILD_TOOLS="28.0.3" ANDROID_SDK_TOOLS="4333796" ANDROID_HOME="/opt" PATH="/opt/node/bin:/opt/tools:/opt/tools/bin:${PATH}"
 
 RUN apt-get --quiet update --yes && \
     apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 gradle apt-transport-https && \
